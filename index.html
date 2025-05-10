@@ -9,10 +9,17 @@
       width: 100%;
       border-collapse: collapse;
     }
-    td {
-      padding: 10px;
-      vertical-align: top;
+    td:first-child {
+    white-space: nowrap;
+    width: 1%;
     }
+    textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    }
+
     label {
       font-weight: bold;
     }
@@ -41,67 +48,67 @@
     <table border="1">
       <tr>
         <td><label for="goal">1. Goal: กำหนดเป้าหมายให้ชัดเจน</label></td>
-        <td><input type="text" id="goal" placeholder="เริ่มจากตั้งคำถามให้เฉียบ!..."></td>
+        <td><textarea rows="4" id="goal" placeholder="เริ่มจากตั้งคำถามให้เฉียบ!..."></textarea></td>
       </tr>
       <tr>
         <td><label for="format">2. Format: ระบุรูปแบบคำตอบ</label></td>
-        <td><input type="text" id="format" placeholder="อยากได้ลิสต์ แบบบทความ หรือพูดเหมือนเล่า..."></td>
+        <td><textarea rows="4" id="format" placeholder="อยากได้ลิสต์ แบบบทความ หรือพูดเหมือนเล่า..."></textarea></td>
       </tr>
       <tr>
         <td><label for="role">3. Role: มอบบทบาทให้ระบบ</label></td>
-        <td><input type="text" id="role" placeholder="ให้ AI รับบทบาทเหมือนคน..."></td>
+        <td><textarea rows="4" id="role" placeholder="ให้ AI รับบทบาทเหมือนคน..."></textarea></td>
       </tr>
       <tr>
         <td><label for="audience">4. Audience: ระบุกลุ่มเป้าหมาย</label></td>
-        <td><input type="text" id="audience" placeholder="คำตอบสำหรับเด็ก ป.6 กับนักวิจัย..."></td>
+        <td><textarea rows="4" id="audience" placeholder="คำตอบสำหรับเด็ก ป.6 กับนักวิจัย..."></textarea></td>
       </tr>
       <tr>
         <td><label for="context">5. Context: ให้ข้อมูลพื้นหลัง</label></td>
-        <td><input type="text" id="context" placeholder="AI ไม่ใช่นักอ่านใจ..."></td>
+        <td><textarea rows="4" id="context" placeholder="AI ไม่ใช่นักอ่านใจ..."></textarea></td>
       </tr>
       <tr>
         <td><label for="constraint">6. Constraint: กำหนดข้อจำกัด</label></td>
-        <td><input type="text" id="constraint" placeholder="ใส่กรอบให้ระบบคิด..."></td>
+        <td><textarea rows="4" id="constraint" placeholder="ใส่กรอบให้ระบบคิด..."></textarea></td>
       </tr>
       <tr>
         <td><label for="clarity">7. Clarity: ใช้ภาษาชัดเจน</label></td>
-        <td><input type="text" id="clarity" placeholder="ถามยังไงได้อย่างนั้น!..."></td>
+        <td><textarea rows="4" id="clarity" placeholder="ถามยังไงได้อย่างนั้น!..."></textarea></td>
       </tr>
       <tr>
         <td><label for="example">8. Example: ยกตัวอย่างประกอบ</label></td>
-        <td><input type="text" id="example" placeholder="ลองแนบตัวอย่างไปด้วย..."></td>
+        <td><textarea rows="4" id="example" placeholder="ลองแนบตัวอย่างไปด้วย..."></textarea></td>
       </tr>
       <tr>
         <td><label for="tone">9. Tone: กำหนดโทนเสียง</label></td>
-        <td><input type="text" id="tone" placeholder="อยากให้ฟังเป็นทางการ หรือฮา ๆ..."></td>
+        <td><textarea rows="4" id="tone" placeholder="อยากให้ฟังเป็นทางการ หรือฮา ๆ..."></textarea></td>
       </tr>
       <tr>
         <td><label for="step">10. Step-by-step: ขอคำอธิบายเป็นขั้นตอน</label></td>
-        <td><input type="text" id="step" placeholder="ช่วยเขียนเป็นขั้นตอนแบบ Step-by-Step..."></td>
+        <td><textarea rows="4" id="step" placeholder="ช่วยเขียนเป็นขั้นตอนแบบ Step-by-Step..."></textarea></td>
       </tr>
       <tr>
         <td><label for="creativity">11. Creativity: เปิดพื้นที่ให้คิดสร้างสรรค์</label></td>
-        <td><input type="text" id="creativity" placeholder="เสนอไอเดียคอนเทนต์ใหม่..."></td>
+        <td><textarea rows="4" id="creativity" placeholder="เสนอไอเดียคอนเทนต์ใหม่..."></textarea></td>
       </tr>
       <tr>
         <td><label for="reference">12. Reference: ขอแหล่งอ้างอิง</label></td>
-        <td><input type="text" id="reference" placeholder="โปรดใส่แหล่งอ้างอิงด้วย..."></td>
+        <td><textarea rows="4" id="reference" placeholder="โปรดใส่แหล่งอ้างอิงด้วย..."></textarea></td>
       </tr>
       <tr>
         <td><label for="term">13. Term: นิยามคำเฉพาะ</label></td>
-        <td><input type="text" id="term" placeholder="เช่น “RAG คือ...”"></td>
+        <td><textarea rows="4" id="term" placeholder="เช่น “RAG คือ...”"></textarea></td>
       </tr>
       <tr>
         <td><label for="concise">14. Concise: เขียนให้กระชับ</label></td>
-        <td><input type="text" id="concise" placeholder="เขียนสั้น ๆ ไม่เกิน 5 บรรทัด..."></td>
+        <td><textarea rows="4" id="concise" placeholder="เขียนสั้น ๆ ไม่เกิน 5 บรรทัด..."></textarea></td>
       </tr>
       <tr>
         <td><label for="focus">15. Focus: ถามทีละเรื่อง</label></td>
-        <td><input type="text" id="focus" placeholder="แยกเป็นข้อ ๆ เพื่อให้ละเอียด..."></td>
+        <td><textarea rows="4" id="focus" placeholder="แยกเป็นข้อ ๆ เพื่อให้ละเอียด..."></textarea></td>
       </tr>
       <tr>
         <td><label for="iterate">16. Iterate: ทดลองและปรับแต่ง</label></td>
-        <td><textarea id="iterate" rows="3" placeholder="ลองปรับคำใหม่ เพิ่มเงื่อนไข..."></textarea></td>
+        <td><textarea id="iterate" rows="3" placeholder="ลองปรับคำใหม่ เพิ่มเงื่อนไข..."></textarea></textarea></td>
       </tr>
       <tr>
         <td colspan="2" class="form-buttons">
@@ -112,7 +119,7 @@
     </table>
   </form>
 
-  <span id="result"></span>
+  <span id="result"></textarea></span>
 
   <script>
     document.getElementById('promptForm').addEventListener('submit', function(e) {
